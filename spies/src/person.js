@@ -9,13 +9,14 @@ class Person {
      return this.name;
   }
 
-  setAge(userAge) {
+  setAge(age) {
     return this.userAge;
   }
 
   setGender(gender) {
     return this.gender;
   }
+  
 
   hello() {
     return (
@@ -39,7 +40,10 @@ let person = new Person("Ryan", 30, "male", [
   "agile",
   "ssd hard drives"
 ]);
+
+
 let greeting = person.hello();
 console.log(greeting);
+
 
 module.exports = Person;

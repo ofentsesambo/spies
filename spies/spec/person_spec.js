@@ -16,8 +16,9 @@ describe("Getting a persons information and outputting it in a string", function
   });
 
   it("Checks if a function is called more than once", function() {
-    spyOn(spyPerson, "setGender");
-    spyPerson.setGender();
-    expect(spyPerson.setGender).toHaveBeenCalledTimes(1);
+    spyOn(spyPerson, "hello");
+    spyPerson.hello(); 
+    spyPerson.hello();
+    expect(spyPerson.hello).toHaveBeenCalledTimes(2);
   });
 });
