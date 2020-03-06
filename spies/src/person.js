@@ -41,9 +41,4 @@ let person = new Person("Ryan", 30, "male", [
   "ssd hard drives"
 ]);
 
-
-let greeting = person.hello();
-console.log(greeting);
-
-
 module.exports = Person;
